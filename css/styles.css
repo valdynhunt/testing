@@ -42,7 +42,47 @@ aside {
 /************
 HEADER
 ************/
-/* Your Styles */
+* {
+  border-color: coral;
+  border-style: solid;
+  border-width: 0px;
+}
+
+body {
+  color: white;
+  background-color: black;
+  margin: 0 50px 0 50px;
+}
+
+.char1 {
+  letter-spacing: -3px;
+}
+
+.char2 {
+  letter-spacing: -1px;
+}
+
+.char3 {
+  letter-spacing: -3px;
+}
+.char4 {
+  letter-spacing: -1px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+    font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+  margin: 35px 0 25px 0;
+}
+
+h2 header {
+  font-size: 1.5em;
+}
 
 
 /************
