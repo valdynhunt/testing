@@ -18,4 +18,5 @@ console.log('OK');
 * Reference: https://github.com/mediaelement/mediaelement/blob/master/docs/usage.md
 */
 
+$('h1').lettering();
 $('video').mediaelementplayer();
