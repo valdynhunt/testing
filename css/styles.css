@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  outline: 1px dotted black;
+  outline: 0px dotted red;
 }
 
 /************
@@ -55,18 +55,18 @@ body {
 }
 
 .char1 {
-  letter-spacing: -3px;
+  letter-spacing: 1px;
 }
 
 .char2 {
-  letter-spacing: -1px;
+  letter-spacing: 2px;
 }
 
 .char3 {
-  letter-spacing: -3px;
+  letter-spacing: 1px;
 }
 .char4 {
-  letter-spacing: -1px;
+  letter-spacing: 4px;
 }
 
 header {
@@ -161,9 +161,19 @@ margin: auto;
 ASIDE
 ************/
 
+ul {
+  list-style-type: none;
+  padding-inline-start: 10px;
+}
+
+li {
+  padding: 5px 5px 5px 5px;
+  margin: 5px;
+}
+
 a {
   color: white;
-  padding: 12px 12px 12px 12px;
+  padding: 5px 5px 5px 5px;
   text-decoration: none;
 }
 
