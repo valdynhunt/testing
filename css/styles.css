@@ -9,13 +9,23 @@ body {
   outline: 0px dotted red;
 }
 
-/************
-LAYOUT
-************/
+/**************************************
+*                COLOR                *
+***************************************/
+
+body {
+  color: white;
+  background-color: black;
+}
+
+/**************************************
+*                LAYOUT               *
+***************************************/
+
 body {
   /* Center to Page   */
-  margin: 0 auto;
-  max-width: 56em;
+  margin: 2em auto;
+  max-width: 100%;
   padding: 1em 0;
   
   /* CSS Grid Layout   */
@@ -23,6 +33,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 1em;
+
 }
 
 header,
@@ -38,21 +49,9 @@ aside {
   grid-column: span 2;
 }
 
-
-/************
-HEADER
-************/
-* {
-  border-color: coral;
-  border-style: solid;
-  border-width: 0px;
-}
-
-body {
-  color: white;
-  background-color: black;
-  margin: 0 50px 0 50px;
-}
+/**************************************
+*                HEADER               *
+***************************************/
 
 .char1 {
   letter-spacing: 1px;
@@ -65,6 +64,7 @@ body {
 .char3 {
   letter-spacing: 1px;
 }
+
 .char4 {
   letter-spacing: 3px;
 }
@@ -74,24 +74,25 @@ header {
 }
 
 h1 {
-    font-family: 'Oswald', 'Open Sans', sans-serif;
+  font-family: 'Oswald', 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 5em;
   margin: 35px 0 25px 0;
 }
 
-h2 header {
+.tagline {
   font-size: 1.5em;
 }
 
-
-/************
-MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
-************/
+/****************************************
+* MOVIE TRAILER w/ MEDIA ELEMENT PLAYER *
+****************************************/
 /* Fit <video> to container */
+
 video {
   max-width: 100%;
-  background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;    
+  background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;  
+  outline: 1px solid red; 
 }
 
 .mejs__currenttime, 
@@ -107,9 +108,10 @@ video {
   background: tomato;
 }
 
-/************
-ARTICLE
-************/
+/**************************************
+*                ARTICLE              *
+***************************************/
+
 article {
   margin-top: 2em;
 }
@@ -118,10 +120,9 @@ article p {
   line-height: 1.2;
 }
 
-
-/************
-ACTORS
-************/
+/**************************************
+*                ACTORS               *
+***************************************/
 
 main section { 
   display: flex;
@@ -182,9 +183,9 @@ div {
 margin: auto;
 }
 
-/************
-ASIDE
-************/
+/**************************************
+*                ASIDE                *
+***************************************/
 
 ul {
   list-style-type: none;
@@ -215,9 +216,9 @@ a:visited {
   background-color: #ccc;
 }
 
-/************
-FOOTER
-************/
+/**************************************
+*                FOOTER                *
+***************************************/
 
 footer {
   position: relative;
@@ -234,10 +235,12 @@ p.copyright {
   bottom:0;
 }
 
-/************
-RWD
-************/
-@media (max-width: 768px) {
+/**************************************
+*                RWD                  *
+***************************************/
+/*  900 instead of 700 :)  */
+
+@media (max-width: 900px) {
 
   main,
   aside {
