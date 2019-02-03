@@ -89,7 +89,7 @@ h1 {
 ****************************************/
 /* Fit <video> to container */
 
-video {
+/* video {
   max-width: 100%;
   background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;  
   outline: 1px solid maroon;
@@ -110,7 +110,7 @@ video {
 
 .mejs__time-current {
   background: maroon;
-}
+} */
 
 /**************************************
 *                ARTICLE              *
