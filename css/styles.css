@@ -225,18 +225,18 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+li:hover > a {
   background-color: #777;
-  color: #333;
+  color: moroon;
 }
 
-a:active {
+/* a:active {
   background-color: black;
 }
 
 a:visited {
   background-color: #ccc;
-}
+} */
 
 /**************************************
 *                FOOTER                *
