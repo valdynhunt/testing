@@ -91,9 +91,8 @@ h1 {
 
 video {
   max-width: 100%;
-  background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;  
+  /* background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;   */
   outline: 1px solid maroon;
-
 }
 
 .mejs__currenttime, 
@@ -125,10 +124,10 @@ article p {
 *                ACTORS               *
 ***************************************/
 
-main section { 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.actors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 30px;
 }
 
 figure {
@@ -136,33 +135,39 @@ figure {
   margin-bottom: 5px;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  opacity: 0.85;
 }
 
-.actors {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-gap: 30px;
+figcaption {
+  opacity: 0;
 }
+
+figure:hover > figcaption{
+  opacity: 1;
+}
+
+figure:hover {  
+  opacity: 1;  
+} 
 
 .cast {
 position: relative;
 }
 
 .cast-img {
-height: 270px;
+height: 350px;
 width: 100%;
 object-fit: cover;
-opacity: 0.85;
+
 }
 
-.cast-img:hover {  
-  opacity: 1;  
-} 
+
 
 .cast-img-title {
 position: absolute;
 bottom: 2px;
 width: 100%;
+/* max-width:200px; */
 padding: 5px -5px 10px 20px;
 text-align: center;
 color: black;
@@ -174,6 +179,7 @@ opacity: 1;
 position: absolute;
 bottom: -17px;
 width: 100%;
+/* max-width:200px; */
 padding: 5px -5px 5px 5px;
 text-align: center;
 color: maroon;
@@ -239,13 +245,86 @@ p.copyright {
 /**************************************
 *                RWD                  *
 ***************************************/
-/*  900 instead of 700 :)  */
 
 @media (max-width: 900px) {
-
   main,
   aside {
     grid-column: 1 / span 5;
   }
   
 }
+
+/* Mobile 320px min */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+, X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* ----------- Tablet ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+}
+
+/* ----------- Desktop ----------- */
+
+/* 640px is 40rem, 1280px is 80rem, etc. */
+@media screen 
+  and (min-width: 1600px) {
+
+}
+
+
+
