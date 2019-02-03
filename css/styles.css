@@ -66,7 +66,7 @@ body {
   letter-spacing: 1px;
 }
 .char4 {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 header {
@@ -91,11 +91,16 @@ MOVIE TRAILER w/ MEDIA ELEMENT PLAYER
 /* Fit <video> to container */
 video {
   max-width: 100%;
+  background: transparent url('/img/rocky_steps.jpg') 50% 50% / cover no-repeat ;    
 }
 
 .mejs__currenttime, 
 .mejs__duration {
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.mejs__time {
+  font-weight: 400;
 }
 
 .mejs__time-current {
@@ -103,18 +108,38 @@ video {
 }
 
 /************
+ARTICLE
+************/
+article {
+  margin-top: 2em;
+}
+
+article p {
+  line-height: 1.2;
+}
+
+
+/************
 ACTORS
 ************/
+
 main section { 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+figure {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .actors {
   display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 30px;
 }
 
 .cast {
@@ -189,13 +214,14 @@ a:active {
 a:visited {
   background-color: #ccc;
 }
+
 /************
 FOOTER
 ************/
 
 footer {
   position: relative;
-  height: 300px;
+  height: 150px;
   width: 100%;
 }
 
@@ -211,7 +237,7 @@ p.copyright {
 /************
 RWD
 ************/
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
   main,
   aside {
